@@ -11,6 +11,11 @@
 		68DEC148287F01230016F374 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DEC147287F01230016F374 /* ContentView.swift */; };
 		68DEC14A287F01250016F374 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68DEC149287F01250016F374 /* Assets.xcassets */; };
 		68DEC14D287F01250016F374 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68DEC14C287F01250016F374 /* Preview Assets.xcassets */; };
+		68DEC154287F09E90016F374 /* WithAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DEC153287F09E90016F374 /* WithAnimationView.swift */; };
+		68DEC156287F0A560016F374 /* AnimationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DEC155287F0A560016F374 /* AnimationModifier.swift */; };
+		68DEC158287F27DA0016F374 /* AnimationDelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DEC157287F27DA0016F374 /* AnimationDelay.swift */; };
+		68DEC15A287F33DE0016F374 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DEC159287F33DE0016F374 /* Transition.swift */; };
+		68DEC15C287F41010016F374 /* MatchedGeometryEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DEC15B287F41010016F374 /* MatchedGeometryEffect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		68DEC147287F01230016F374 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		68DEC149287F01250016F374 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68DEC14C287F01250016F374 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		68DEC153287F09E90016F374 /* WithAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithAnimationView.swift; sourceTree = "<group>"; };
+		68DEC155287F0A560016F374 /* AnimationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationModifier.swift; sourceTree = "<group>"; };
+		68DEC157287F27DA0016F374 /* AnimationDelay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationDelay.swift; sourceTree = "<group>"; };
+		68DEC159287F33DE0016F374 /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		68DEC15B287F41010016F374 /* MatchedGeometryEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,11 @@
 			children = (
 				68DEC145287F01230016F374 /* AnimationExampleApp.swift */,
 				68DEC147287F01230016F374 /* ContentView.swift */,
+				68DEC153287F09E90016F374 /* WithAnimationView.swift */,
+				68DEC155287F0A560016F374 /* AnimationModifier.swift */,
+				68DEC157287F27DA0016F374 /* AnimationDelay.swift */,
+				68DEC159287F33DE0016F374 /* Transition.swift */,
+				68DEC15B287F41010016F374 /* MatchedGeometryEffect.swift */,
 				68DEC149287F01250016F374 /* Assets.xcassets */,
 				68DEC14B287F01250016F374 /* Preview Content */,
 			);
@@ -137,8 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68DEC15A287F33DE0016F374 /* Transition.swift in Sources */,
 				68DEC148287F01230016F374 /* ContentView.swift in Sources */,
+				68DEC156287F0A560016F374 /* AnimationModifier.swift in Sources */,
+				68DEC154287F09E90016F374 /* WithAnimationView.swift in Sources */,
 				68DEC146287F01230016F374 /* AnimationExampleApp.swift in Sources */,
+				68DEC158287F27DA0016F374 /* AnimationDelay.swift in Sources */,
+				68DEC15C287F41010016F374 /* MatchedGeometryEffect.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

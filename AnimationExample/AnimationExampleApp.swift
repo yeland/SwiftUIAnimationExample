@@ -2,7 +2,7 @@
 //  AnimationExampleApp.swift
 //  AnimationExample
 //
-//  Created by WorkInRea on 2022/7/13.
+//  Created by Linxiao on 2022/7/13.
 //
 
 import SwiftUI
