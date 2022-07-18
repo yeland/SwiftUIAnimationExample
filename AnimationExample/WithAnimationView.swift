@@ -14,7 +14,7 @@ struct WithAnimationView: View {
   var body: some View {
     VStack(alignment: .leading) {
       Button("Start Animation", action: {
-        withAnimation(.easeInOut) {
+        withAnimation(.linear) {
           self.selected.toggle()
         }
       }).frame(maxWidth: .infinity)
@@ -22,27 +22,30 @@ struct WithAnimationView: View {
         .fill(selected ? Color.blue : .green)
         .frame(width: 50, height: 50)
         .offset(x: selected ? 300 : 0, y: 0)
+        .animation(.easeInOut, value: selected)
       RoundedRectangle(cornerRadius: 10)
         .fill(selected ? Color.orange : .yellow)
         .frame(width: 50, height: 50)
         .offset(x: selected ? 300 : 0, y: 0)
-//        .animation(nil, value: selected)
+        .animation(nil, value: selected)
 
-//      Button("Start beat", action: {
-//        withAnimation(.easeInOut) {
-//          self.shouldStartBeat = true
-//        }
-//      }).frame(maxWidth: .infinity)
-//      HStack {
-//        Image(systemName: "suit.heart.fill")
-//          .resizable()
-//          .scaledToFit()
-//          .foregroundColor(.red)
-//          .frame(width: 50, height: 50, alignment: .center)
-//          .scaleEffect(self.shouldStartBeat ? 0.5: 1)
-//          .animation(Animation.linear(duration: 0.5).speed(0.5).repeatForever(), value: shouldStartBeat)
-//          .padding()
-//      }.frame(maxWidth: .infinity)
+      Button("Start beat", action: {
+        withAnimation(.easeInOut) {
+          self.shouldStartBeat = true
+          self.selected = true
+        }
+      }).frame(maxWidth: .infinity)
+      HStack {
+        Image(systemName: "suit.heart.fill")
+          .resizable()
+          .scaledToFit()
+          .foregroundColor(.red)
+          .frame(width: 50, height: 50, alignment: .center)
+          .scaleEffect(self.shouldStartBeat ? 0.5: 1)
+          .animation(Animation.linear(duration: 0.5).speed(0.5).repeatForever(autoreverses: false), value: shouldStartBeat)
+          .animation(.linear, value: selected)
+          .padding()
+      }.frame(maxWidth: .infinity)
       Spacer()
     }
     .padding()
